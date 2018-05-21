@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="agenda">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Agendar Consulta</title>
+
+    <ul class="nav nav-pills nav-justified">
+        <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="cadastroMedico.html">Cadastrar médico</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Agendar Consulta</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#">Filtro</a>
+        </li>
+    </ul>
+
+</head>
+
+<body>
+
+    <div class="container main-group" ng-controller="TesteController as controller">
+
+        <h1>Agendar Consulta</h1>
+        <h5>Preencha os campos abaixo:</h5>
+
+
+        <!--Fazer o menu com as opções do teste aqui. (Cadastro de
+			Médicos, Cadastro de Consultórios, Cadastro de Consultas , Consulta
+			das Consultas Médicas Cadastradas)
+
+
+		<input type="text" ng-model="controller.inputTeste" maxlength="30" />-->
+
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Nome</span>
+            </div>
+            <input type="text" ng-model="controller.inputTeste" maxlength="50" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Especialidade médica</span>
+            </div>
+            <input type="text" ng-model="controller.inputTeste" maxlength="50" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Médico</span>
+            </div>
+            <input type="text" ng-model="controller.inputTeste" maxlength="50" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">CRM</span>
+            </div>
+            <input type="text" ng-model="controller.inputTeste" maxlength="50" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Numero do consultório</span>
+            </div>
+            <input type="text" ng-model="controller.inputTeste" maxlength="50" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+
+
+
+
+        </br>
+        <button type="button" class="btn btn-primary btn-lg" ng-click="controller.testeDeEvento()">Agendar</button>
+
+
+
+    </div>
+
+    <script src="../resources/jquery/jquery.min.js"></script>
+    <script src="../resources/angularjs/angular.min.js"></script>
+    <script src="../resources/app.js"></script>
+    <script src="../resources/bootstrap/bootstrap.min.js"></script>
+    <script src="../resources/watable/jquery.watable.js"></script>
+
+    <link href="../resources/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="../resources/watable/animate.min.css" rel="stylesheet">
+    <link href="../resources/watable/watable.css" rel="stylesheet">
+
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="agenda">
+<head>
+<meta charset="UTF-8">
+<title>Menu</title>
+
+</head>
+<body>
+	<div class="container main-group"
+		ng-controller="TesteController as controller">
+
+		<h3>Fazer o menu com as opções do teste aqui. (Cadastro de
+			Médicos, Cadastro de Consultórios, Cadastro de Consultas , Consulta
+			das Consultas Médicas Cadastradas)</h3>
+
+
+		<input type="text" ng-model="controller.inputTeste"
+			maxlength="30" />
+
+		<button type="button" ng-click="controller.testeDeEvento()">Click</button>
+
+	</div>
+
+
+	<script src="../resources/jquery/jquery.min.js"></script>
+	<script src="../resources/angularjs/angular.min.js"></script>
+	<script src="../resources/app.js"></script>
+	<script src="../resources/bootstrap/bootstrap.min.js"></script>
+	<script src="../resources/watable/jquery.watable.js"></script>
+
+	<link href="../resources/bootstrap/bootstrap.min.css" rel="stylesheet">
+	<link href="../resources/watable/animate.min.css" rel="stylesheet">
+	<link href="../resources/watable/watable.css" rel="stylesheet">
+
+	<script src="index.js"></script>
+</body>
+</html>
